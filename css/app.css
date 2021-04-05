@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.wrapper {
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .header {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1569629743817-70d8db6c323b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1374&q=80");
+  text-align: center;
+}
+
+.wrapper .header .top {
+  display: inline-block;
+  font-size: 30px;
+  text-align: center;
+}
+
+.wrapper .header .top .top__line1 {
+  display: inline-block;
+  margin-top: 5%;
+  font-size: 100px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.wrapper .header .top .top__line2 {
+  display: inline-block;
+  color: gray;
+  width: 100%;
+}
+
+.wrapper .header .top .top__line3 {
+  display: inline-block;
+  width: 100%;
+  padding: 5% 0px 5% 0px;
+}
+
+.wrapper .header .top .top__line3 .clock {
+  font-weight: bold;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.wrapper .header .top .top__line3 .clock .days {
+  width: 20%;
+  float: left;
+}
+
+.wrapper .header .top .top__line3 .clock .hours {
+  width: 20%;
+  float: left;
+}
+
+.wrapper .header .top .top__line3 .clock .minutes {
+  width: 20%;
+  float: left;
+}
+
+.wrapper .header .top .top__line3 .clock .seconds {
+  width: 20%;
+  float: left;
+}
+
+.wrapper .main {
+  display: inline-block;
+  font-size: 30px;
+  width: 100%;
+  height: 100vh;
+  background-color: lightsalmon;
+}
+
+.wrapper .main .column1 {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.wrapper .main .column2 {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.wrapper .footer {
+  display: inline-block;
+  font-size: 30px;
+  width: 100%;
+  height: 50vh;
+  background-color: #7affb6;
+}
