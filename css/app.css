@@ -255,7 +255,16 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .main .column2 .fform .line2 .line2__input {
   border-bottom: 2px solid blue;
   width: 100%;
+  float: left;
   background-color: transparent;
+}
+
+.wrapper .main .column2 .fform .line2 .line2__input textarea {
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+  max-width: 100%;
 }
 
 .wrapper .main .column2 .fform .submitButton {
