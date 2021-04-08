@@ -72,6 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   justify-content: center;
   align-items: center;
+  font-family: "Lato", sans-serif;
 }
 
 .wrapper .header {
@@ -86,11 +87,10 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .header .top {
   font-size: 30px;
   text-align: center;
-  font-family: "Lato", sans-serif;
   width: 80%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .wrapper .header .top {
     font-size: 20px;
   }
@@ -218,9 +218,31 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0px 0px 10px 0px;
 }
 
-.wrapper .main .column2 .fform .line1 .line1__input {
+.wrapper .main .column2 .fform .line1 .line1__input1 {
   border-bottom: 2px solid blue;
-  width: 49%;
+  width: 48%;
+  float: left;
+  background-color: transparent;
+}
+
+@media (max-width: 700px) {
+  .wrapper .main .column2 .fform .line1 .line1__input1 {
+    width: 100%;
+  }
+}
+
+.wrapper .main .column2 .fform .line1 .line1__input2 {
+  border-bottom: 2px solid blue;
+  width: 48%;
+  float: right;
+  background-color: transparent;
+}
+
+@media (max-width: 700px) {
+  .wrapper .main .column2 .fform .line1 .line1__input2 {
+    width: 100%;
+    padding-top: 15px;
+  }
 }
 
 .wrapper .main .column2 .fform .line2 {
@@ -233,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper .main .column2 .fform .line2 .line2__input {
   border-bottom: 2px solid blue;
   width: 100%;
-  resize: both;
+  background-color: transparent;
 }
 
 .wrapper .main .column2 .fform .submitButton {
@@ -258,7 +280,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 70vh;
   background: linear-gradient(180deg, white 0%, #0041d6 91%);
-  font-family: "Lato", sans-serif;
 }
 
 .footer .footer__container {
@@ -276,17 +297,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
   .wrapper .main {
     height: 200vh;
   }
   .wrapper .main .column1 {
-    background-color: burlywood;
     width: 100%;
     height: 50%;
   }
   .wrapper .main .column2 {
-    background-color: cornflowerblue;
     width: 100%;
     height: 50%;
   }
