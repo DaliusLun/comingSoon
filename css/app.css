@@ -127,7 +127,8 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 23px;
+  font-family: "Roboto Slab", serif;
 }
 
 .wrapper .header .top .top__line3 .clock .days {
