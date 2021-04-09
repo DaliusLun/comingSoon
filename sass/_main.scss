@@ -38,6 +38,7 @@
                 font-size: 2em;
                 width: 100%;
                 text-transform: uppercase;
+                font-weight: bold;
             }
 
             .top__line2 {
@@ -45,6 +46,7 @@
                 color:$btn_clr;
                 width: 100%;
                 font-size: 20px;
+                text-transform:initial;
             }
 
             .top__line3 {
@@ -409,169 +411,7 @@
 
   .container__social {
       width:100%;
-    .fa {
-        padding: 20px;
-        font-size: 20px;
-        width: 100px;
-        text-align: center;
-        text-decoration: none;
-        margin: 5px 2px;
-    }
-    
-    .fa:hover {
-        opacity: 0.7;
-    }
-    
-    .fa-facebook {
-
-        color: white;
-    }
-    
-    .fa-twitter {
-
-        color: white;
-    }
-    
-    .fa-google {
-
-        color: white;
-    }
-    
-    .fa-linkedin {
-        
-        color: white;
-    }
-    
-    .fa-youtube {
-
-        color: white;
-    }
-    
-    .fa-instagram {
-
-        color: white;
-    }
-    
-    .fa-pinterest {
-
-        color: white;
-    }
-    
-    .fa-snapchat-ghost {
-
-        color: white;
-        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    }
-    
-    .fa-skype {
-
-        color: white;
-    }
-    
-    .fa-android {
-        background: #a4c639;
-        color: white;
-    }
-    
-    .fa-dribbble {
-        background: #ea4c89;
-        color: white;
-    }
-    
-    .fa-vimeo {
-        background: #45bbff;
-        color: white;
-    }
-    
-    .fa-tumblr {
-        background: #2c4762;
-        color: white;
-    }
-    
-    .fa-vine {
-        background: #00b489;
-        color: white;
-    }
-    
-    .fa-foursquare {
-        background: #45bbff;
-        color: white;
-    }
-    
-    .fa-stumbleupon {
-        background: #eb4924;
-        color: white;
-    }
-    
-    .fa-flickr {
-        background: #f40083;
-        color: white;
-    }
-    
-    .fa-yahoo {
-        background: #430297;
-        color: white;
-    }
-    
-    .fa-soundcloud {
-        background: #ff5500;
-        color: white;
-    }
-    
-    .fa-reddit {
-        background: #ff5700;
-        color: white;
-    }
-    
-    .fa-rss {
-        background: #ff6600;
-        color: white;
-    }
-  
-}
-
-.moving-mouse-holder {
-    margin: auto;
-    margin-top: 10px;
-    width: 100%;
-    justify-content: center;
-    display: flex;
-  }
-  
-  .moving-mouse-holder .mouse {
-    width: 26px;
-    height: 40px;
-    position: relative;
-    right: 0;
-    border-radius: 18px;
-    border: 2px solid #000000;
-  }
-  
-  .moving-mouse-holder .mouse-button {
-    background-color: #000000;
-    width: 4px;
-    height: 10px;
-    border-radius: 2px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    margin: 0 0 0 -2px;
-    animation: mouse-scroll 1s infinite alternate;
-  }
-  
-  .moving-mouse-holder .text {
-    margin-top: -30px;
-    margin-left: 40px;
-    color: #33cc66;
-    font-size: 12px;
-    line-height: 1em;
-  }
-  
-  @keyframes mouse-scroll {
-    to {
-      transform: translate(0, 6px) scale(1, 0.8);
-    }
-  }
+     }
 
 
 
