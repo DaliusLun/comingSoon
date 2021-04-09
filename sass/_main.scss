@@ -94,6 +94,11 @@
                     background: transparent;
                     color: $btn_clr;
                     font-size: 20px;
+                    text-align: center;
+                    @media (max-width: $sc) {     
+                        width: 80%;
+                        
+                    }
 
                   }
                   ::placeholder {
@@ -109,6 +114,10 @@
                     width:20%;
                     height: 30px;
                     box-shadow: 0 0 5px #333;
+                    @media (max-width: $sc) {     
+                        width: 60%;
+                        
+                    }
                     &:hover {
                         opacity: 0.7;
                     }

@@ -165,6 +165,13 @@ h1, h2, h3, h4, h5, h6 {
   background: transparent;
   color: white;
   font-size: 20px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .wrapper .header .top .subscribeForm .emailLine {
+    width: 80%;
+  }
 }
 
 .wrapper .header .top .subscribeForm ::placeholder {
@@ -178,6 +185,12 @@ h1, h2, h3, h4, h5, h6 {
   width: 20%;
   height: 30px;
   box-shadow: 0 0 5px #333;
+}
+
+@media (max-width: 700px) {
+  .wrapper .header .top .subscribeForm .subscribeButton {
+    width: 60%;
+  }
 }
 
 .wrapper .header .top .subscribeForm .subscribeButton:hover {
