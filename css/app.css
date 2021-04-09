@@ -199,6 +199,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrapper .main .heading {
   padding-bottom: 10%;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .wrapper .main .parag {
@@ -296,6 +298,10 @@ h1, h2, h3, h4, h5, h6 {
   width: 80%;
 }
 
+.footer .footer__container .container__logo {
+  width: 100%;
+}
+
 .footer .footer__container .container__logo .logo__bottom {
   width: 100%;
   max-width: 100px;
@@ -305,6 +311,11 @@ h1, h2, h3, h4, h5, h6 {
 .footer .footer__container .container__copyright {
   color: black;
   font-size: 15px;
+  width: 100%;
+}
+
+.footer .footer__container .container__social {
+  width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
@@ -341,31 +352,35 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#myBtn {
-  position: fixed;
+.toTop {
+  position: sticky;
   /* Fixed/sticky position */
   bottom: 20px;
   /* Place the button at the bottom of the page */
   right: 30px;
   /* Place the button 30px from the right */
-  z-index: 99;
-  /* Make sure it does not overlap */
   border: none;
   /* Remove borders */
   outline: none;
   /* Remove outline */
-  background-color: red;
+  background-color: blue;
   /* Set a background color */
   color: white;
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
-  padding: 15px;
+  padding: 2px;
   /* Some padding */
-  border-radius: 10px;
+  border-radius: 20px;
   /* Rounded corners */
-  font-size: 18px;
+  font-size: 20px;
   /* Increase font size */
+  height: auto;
+  float: right;
+}
+
+.toTop:hover {
+  opacity: 0.7;
 }
 
 .container__social {
