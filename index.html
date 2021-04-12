@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        html {
+          scroll-behavior: smooth;
+        }
+    </style>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,10 +30,6 @@
                 <a class="meniu" href="#">OtherMeniuButtons</a>
                 <a class="meniu" href="#">WhoIAm</a>
                 <a class="meniu" href="#">Top</a>
-                <a class="meniu" href="#">Home</a>
-                <a class="meniu" href="#">Home</a>
-                <a class="meniu" href="#">Home</a>
-                <a class="meniu" href="#">Home</a>
             </nav>
             <div class="burger_container">
                 <a href="##"><div class="burger"></div></a>
@@ -64,8 +66,13 @@
                               var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                                 
                               // Output the result in an element with id="demo"
-                              document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                              + minutes + "m " + seconds + "s ";
+                            //   document.getElementById("d").innerHTML = days +"d " + hours + "h "
+                            //   + minutes + "m " + seconds + "s ";
+                              document.getElementById("d").innerHTML = days;
+                              document.getElementById("h").innerHTML = hours;
+                              document.getElementById("m").innerHTML = minutes;
+                              document.getElementById("s").innerHTML = seconds;
+                              
                                 
                               // If the count down is over, write some text 
                               if (distance < 0) {
@@ -74,6 +81,30 @@
                               }
                             }, 1000);
                             </script>
+
+                            <div class="clock__time">
+                                <div class="time__container">
+                                    <p class="time__number" id="d"></p>
+                                    <p class="time__number">days</p>
+
+                                </div>
+                                <div class="time__container">
+                                    <p class="time__number" id="h"></p>
+                                    <p class="time__number">hours</p>
+
+                                </div>
+                                <div class="time__container">
+                                    <p class="time__number" id="m"></p>
+                                    <p class="time__number">minutes</p>
+
+                                </div>
+                                <div class="time__container">
+                                    <p class="time__number" id="s"></p>
+                                    <p class="time__number">seconds</p>
+
+                                </div>
+                                
+                            </div>
                             
                         <!-- <div class="days">1 days</div>
                         <div class="hours">2 hours</div>
@@ -142,7 +173,7 @@
         
         <div class="footer">
          <div class="footer__container">
-            <a class="toTop" href="#top">▲</a>
+            <a class="toTop" href="#top">></a>
              <div class="container__logo">
                 <img class="logo__bottom" src="./img/logo.svg" alt="logo">
              </div>

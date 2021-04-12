@@ -130,6 +130,54 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
 }
 
+.wrapper .header .top .top__line3 {
+  width: 100%;
+}
+
+.wrapper .header .top .top__line3 .clock {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+.wrapper .header .top .top__line3 .clock .clock__time {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 15%;
+}
+
+@media (max-width: 700px) {
+  .wrapper .header .top .top__line3 .clock .clock__time {
+    display: inline;
+    margin-left: 0%;
+  }
+}
+
+.wrapper .header .top .top__line3 .clock .clock__time .time__container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+.wrapper .header .top .top__line3 .clock .clock__time .time__container .time__number {
+  padding: 0px 15px 0px 15px;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+
+@media (max-width: 700px) {
+  .wrapper .header .top .top__line3 .clock .clock__time .time__container .time__number {
+    width: auto;
+  }
+}
+
 .wrapper .header .top {
   font-size: 29px;
   text-align: center;
@@ -420,6 +468,8 @@ h1, h2, h3, h4, h5, h6 {
   resize: vertical;
   width: 100%;
   max-width: 100%;
+  max-height: 100px;
+  min-height: 40px;
 }
 
 .wrapper .main .column2 .fform .submitButton {
@@ -474,29 +524,23 @@ h1, h2, h3, h4, h5, h6 {
 .toTop {
   position: sticky;
   /* Fixed/sticky position */
-  bottom: 20px;
-  /* Place the button at the bottom of the page */
-  right: 30px;
-  /* Place the button 30px from the right */
-  border: none;
-  /* Remove borders */
-  outline: none;
-  /* Remove outline */
   background-color: blue;
   /* Set a background color */
   color: white;
   /* Text color */
   cursor: pointer;
   /* Add a mouse pointer on hover */
-  padding: 2px;
-  /* Some padding */
-  border-radius: 20px;
+  border-radius: 50px;
   /* Rounded corners */
-  font-size: 20px;
+  font-size: 28px;
   /* Increase font size */
-  height: auto;
+  height: 30px;
+  width: 30px;
   float: right;
   box-shadow: 0 0 5px #333;
+  scroll-behavior: smooth;
+  transform: rotate(-90deg);
+  margin-top: -15px;
 }
 
 .toTop:hover {
