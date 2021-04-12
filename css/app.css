@@ -285,18 +285,20 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   width: 98%;
   margin: 1% 1% 1% 1%;
-  height: 100vh;
   font-size: 20px;
   color: gray;
-  /* INDIVIDUAL BAR'S STYLING, SAME GOES WITH OTHER BARS */
-  /* HERE'S ONE WITH GRADIENT WHICH LOOKS SUPER COOL */
 }
 
 .wrapper .main .column1 {
   float: left;
   width: 50%;
-  height: 100%;
   padding: 7% 7% 7% 7%;
+}
+
+@media (max-width: 700px) {
+  .wrapper .main .column1 {
+    width: 100%;
+  }
 }
 
 .wrapper .main .heading {
@@ -309,69 +311,58 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 10%;
 }
 
-.wrapper .main .barName {
-  padding-bottom: 10%;
-  margin-top: 5px;
+.wrapper .main .progressBar .progressTitle {
+  display: inline-block;
+  width: 50%;
+  margin-bottom: 10px;
 }
 
-.wrapper .main .bar-holder {
-  width: 100%;
-  background-color: #e7e7e7;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  margin: 0 auto;
+.wrapper .main .progressBar .progressPercentage {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  margin-bottom: 10px;
 }
 
-.wrapper .main .bar-1 {
-  width: 99%;
-  background-color: blue;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  margin-top: 5px;
+.wrapper .main .progressBar .meter {
+  height: 5px;
+  position: relative;
+  background: #f3efe6;
+  overflow: hidden;
   margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-.wrapper .main .bar-2 {
-  width: 40%;
+.wrapper .main .progressBar .meter .progress {
   background-color: blue;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 20px;
+  animation: progressBar 3s ease-in-out;
+  animation-fill-mode: both;
 }
 
-.wrapper .main .bar-3 {
-  width: 60%;
-  color: #fff;
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 20px;
-  background-color: blue;
+.wrapper .main .progressBar .meter span {
+  display: block;
+  height: 100%;
+}
+
+@keyframes progressBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
 }
 
 .wrapper .main .column2 {
   float: left;
   width: 50%;
-  height: 100%;
   padding: 7% 7% 7% 7%;
+}
+
+@media (max-width: 700px) {
+  .wrapper .main .column2 {
+    width: 100%;
+  }
 }
 
 .wrapper .main .column2 .fform .line1 {
@@ -477,40 +468,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer .footer__container .container__social {
   width: 100%;
-}
-
-@media only screen and (max-width: 700px) {
-  .wrapper .main {
-    height: 200vh;
-  }
-  .wrapper .main .column1 {
-    width: 100%;
-    height: 50%;
-  }
-  .wrapper .main .column2 {
-    width: 100%;
-    height: 50%;
-  }
-  .wrapper .header .top .top__line3 .clock {
-    justify-content: flex-start;
-    align-items: stretch;
-  }
-  .wrapper .header .top .top__line3 .clock .days {
-    width: 100%;
-    padding: 1% 0 1% 0;
-  }
-  .wrapper .header .top .top__line3 .clock .hours {
-    width: 100%;
-    padding: 1% 0 1% 0;
-  }
-  .wrapper .header .top .top__line3 .clock .minutes {
-    width: 100%;
-    padding: 1% 0 1% 0;
-  }
-  .wrapper .header .top .top__line3 .clock .seconds {
-    width: 100%;
-    padding: 1% 0 1% 0;
-  }
 }
 
 .toTop {

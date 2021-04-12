@@ -215,17 +215,19 @@
         align-items: center;
         width:98%;
         margin: 1% 1% 1% 1%;
-        height:100vh;
+        // height:100vh;
         font-size: 20px;
         color: gray;
 
         .column1{
            float:left;
            width: 50%;
-           height: 100%;
+        //    height: 100%;
            
            padding:7% 7% 7% 7%;
-           
+           @media (max-width: $sc) {
+            width:100%
+        }
            }
 
            .heading {
@@ -240,79 +242,60 @@
                 
         }
 
-        .barName {
-            padding-bottom: 10%;
-            margin-top: 5px;
+        .progressBar {
+    
+            .progressTitle {
+                display: inline-block;
+                width: 50%;
+                margin-bottom: 10px;
+            }
+        
+            .progressPercentage {
+                display: inline-block;
+                width: 50%;
+                text-align: right;
+                margin-bottom: 10px;
+            }
+            .meter { 
+                height: 5px;
+                position: relative;
+                background: #f3efe6;
+                overflow: hidden;
+                margin-bottom: 20px;
+                border-radius: 10px;
+        
+            
+                .progress {
+                    background-color: $frm_clr;
+                    animation: progressBar 3s ease-in-out;
+                    animation-fill-mode:both; 
+                }
+            }
+            
+            .meter span {
+                display: block;
+                height: 100%;
+            }
+            
         }
-        .bar-holder {
-            width: 100%;
-            background-color: rgb(231, 231, 231);
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            margin: 0 auto;
-            
-            
-          }
-          
-          /* INDIVIDUAL BAR'S STYLING, SAME GOES WITH OTHER BARS */
-          
-          .bar-1 {
-            width: 99%;
-            background-color: $frm_clr;
-            color: #fff;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 20px;
-            
-          }
+        
+        
+        @keyframes progressBar {
+          0% { width: 0; }
+          100% { width: 100%; }
+        }
 
-          .bar-2 {
-            width: 40%;
-            background-color: $frm_clr;
-            color: #fff;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 20px;
-          }
-          
-          
-          /* HERE'S ONE WITH GRADIENT WHICH LOOKS SUPER COOL */
-          
-          .bar-3 {
-            width: 60%;
-            color: #fff;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            -ms-border-radius: 20px;
-            -o-border-radius: 20px;
-            text-align: center;
-            margin-top: 5px;
-            margin-bottom: 20px;
-            background-color: $frm_clr;
-          }
-          
         
         
 
         .column2{
             float:left;
             width: 50%;
-            height: 100%; 
+            // height: 100%; 
             padding:7% 7% 7% 7%;
+            @media (max-width: $sc) {
+                width:100%
+            }
 
             .fform {
                 
@@ -433,48 +416,6 @@
 
 
 
-  @media only screen and (max-width: $sc) {  
-      .wrapper {
-          .main{
-            height:200vh;
-              .column1 {
-                width: 100%;
-                height: 50%;
-              }
-              .column2 {
-                width: 100%;
-                height: 50%;
-              }
-          }
-          .header {
-              .top {
-                  .top__line3 {
-                    .clock {
-                        justify-content:flex-start;
-                        align-items: stretch;
-                        .days {
-                            width:100%;
-                            padding:1% 0 1% 0;
-                        }
-                        .hours {
-                            width:100%;
-                            padding:1% 0 1% 0;
-                        }
-                        .minutes {
-                            width:100%;
-                            padding:1% 0 1% 0;
-                        }
-                        .seconds {
-                            width:100%;
-                            padding:1% 0 1% 0;
-                        }
-                    }
-                  }
-              }
-          }
-      }
-
-}
 
 .toTop {
     position: sticky; /* Fixed/sticky position */
@@ -619,3 +560,5 @@ ul.social-icons {
 .red {
     color:red;
 }
+
+
